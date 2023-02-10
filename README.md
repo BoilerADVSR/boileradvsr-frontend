@@ -1,8 +1,6 @@
-## BoilerADVSR
+## BoilerADVSR Frontend
 
-TweetWorld 
-
-An application used to filter data form Twitter based on user preference, built with React, Redux, JavaScript, and CSS.
+A React.js application to serve as the user interface for BoilerADVSR
 
 ## Project Status
 This project is currently in development. 
@@ -13,16 +11,11 @@ This project is currently in development.
 Refer to https://nodejs.org/en/ to install nodejs
 
 ### Install create-react-app
-Install create-react-app npm package globally. This will help to easily run the project and also build the source files easily. Use the following command to install create-react-app
+Install create-react-app npm package in the project directory. This will help to easily run the project and also build the source files easily. Use the following command to install create-react-app
 
 ```bash
-npm install -g create-react-app
+npm install create-react-app
 ```
-## Live Application URL
-
-The Application is deployed in https://aditya-sridhar.github.io/simple-reactjs-app
-
-Click on the link to see the application
 
 ## Cloning and Running the Application in local
 
@@ -40,4 +33,4 @@ In order to run the application Type the following command
 npm start
 ```
 
-The Application Runs on **localhost:3000**
+The Application Runs on **localhost:8000**
