@@ -1,0 +1,23 @@
+commit c8f42f0ac9d08a98ac3bda63a82070bb826972b6
+Author: Freddie Clarke <47573673+freddieclarke13@users.noreply.github.com>
+Date:   Tue Feb 21 17:18:12 2023 -0500
+
+    Created Login and Signup components
+
+commit 2f464b4b5279f3ee37fb0c5aab66f3cd390dc383
+Author: Freddie Clarke <47573673+freddieclarke13@users.noreply.github.com>
+Date:   Thu Feb 9 23:58:24 2023 -0500
+
+    Built basic components to display courses from API
+
+commit 48a4c5dcd25eb6efb71c1a344affb4ef8aaaf224
+Author: Freddie Clarke <47573673+freddieclarke13@users.noreply.github.com>
+Date:   Thu Feb 9 22:44:06 2023 -0500
+
+    committing
+
+commit 1d2893ce86ef03b67e2999a6543cda899b4a1b8b
+Author: Freddie Clarke <freddieclarke13@gmail.com>
+Date:   Thu Feb 9 22:38:36 2023 -0500
+
+    Initial commit
