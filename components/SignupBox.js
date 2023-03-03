@@ -5,7 +5,7 @@ export default function SignUp() {
     return (
         <Container component="main" maxwidth="xs">
                 <Box sx={{ p: 2 }}>
-                    <Avatar sx={{ m: 1, bgcolor: 'secondary.main' }}>
+                    <Avatar sx={{ m: 1}}>
                     </Avatar>
                     <Typography component="h1" variant="h5">
                         Sign Up

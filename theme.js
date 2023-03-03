@@ -18,8 +18,11 @@ const theme = createTheme({
         },
     },
     typography: {
-        fontFamily: ['Inter', 'sans-serif'].join(','),
-    }
+          fontFamily: [
+            'Poppins',
+            'sans-serif',
+          ].join(','),
+    },
 });
 
 export default theme;
