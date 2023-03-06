@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Component } from "react";
 import { ThemeProvider } from '@mui/material/styles';
 import { CssBaseline, Grid } from "@mui/material";
 import theme from '../theme';
@@ -8,8 +8,10 @@ import { Diversity1 } from "@mui/icons-material";
 import zIndex from "@mui/material/styles/zIndex";
 import ResponsiveAppBar from "../components/ResponsiveAppBar";
 
-export default function Landing() {
-    const styles = {
+
+class Landing extends Component {
+
+    styles = {
         bg: {
             backgroundImage: `url(${image})`,
             backgroundSize: 'cover',
@@ -20,17 +22,40 @@ export default function Landing() {
             zIndex: 1,
         }
     };
-    
-    return (
 
-        <div>
+    emptyItem = {
+        firstName: '',
+        lastName: '',
+        email: '',
+        password: '',
+        validate: {
+            emailState: '',
+        },
+    };
+
+    constructor(props) {
+        super(props);
+        this.state = {
+            item: this.emptyItem
+        };
+    }
+    
+    async componentDidMount() {
+        const student = await (await fetch(`/students/${this.props.match.params.id}`)).json();
+        this.setState({item: student});
+    }
+
+    render() {
+        const {state} = this.props.location;
+        const {item} = this.state;
+    return (
         <ThemeProvider theme={theme}>
         <CssBaseline/>
         <ResponsiveAppBar/>
-        <Container component="main" maxwidth="xs" alignItems="center" justifyContent="center">
-            <Grid container spacing={0} direction="column" alignItems="center" justifyContent="center" style={{ minHeight: '100vh' }}>
+        <Container component="main" maxwidth="xs" alignitems="center" justifycontent="center">
+            <Grid container spacing={0} direction="column" alignitems="center" justifycontent="center" style={{ minHeight: '100vh' }}>
                 <Grid item xs={3}>
-                    <Typography color="secondary" variant="h3">Welcome back, John</Typography>
+                    <Typography color="secondary" variant="h3">Welcome back, {item.firstName}</Typography>
                 </Grid>
                 <Grid item xs={3}>
                     <Typography variant="h5">What would you like to do?</Typography>
@@ -46,6 +71,8 @@ export default function Landing() {
             </Grid>
         </Container>
         </ThemeProvider>
-        </div>
     );
+    }
 }
+
+export default Landing;

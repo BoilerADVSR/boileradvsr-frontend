@@ -27,8 +27,8 @@ export default function Profile() {
         <ThemeProvider theme={theme}>
         <CssBaseline/>
         <ResponsiveAppBar/>
-        <Container component="main" maxwidth="xs" alignItems="center" justifyContent="center">
-            <Grid container spacing={0} direction="column" alignItems="center" justifyContent="center" style={{ minHeight: '100vh' }}>
+        <Container component="main" maxwidth="xs" alignitems="center" justifycontent="center">
+            <Grid container spacing={0} direction="column" alignitems="center" justifycontent="center" style={{ minHeight: '100vh' }}>
                 <Grid item xs={3}>
                     <Typography color="secondary" variant="h3">Edit Your Profile</Typography>
                 </Grid>
